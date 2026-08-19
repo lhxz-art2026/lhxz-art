@@ -1,0 +1,16 @@
+{
+  "name": "刘星灼美术课",
+  "short_name": "美术课",
+  "description": "美术教师本地工作台：课表、备课、学生名单、作业评分、考勤、纪律、优秀作业、成长档案",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2f5fa",
+  "theme_color": "#2f6fed",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
