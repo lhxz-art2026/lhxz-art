@@ -3,13 +3,14 @@
  * 界面靠它刷新显示；自动保存 = 每次改动立刻调这里的 put。 */
 (function () {
   const DB_NAME = 'lxz_art_db';
-  const DB_VER = 1;
+  const DB_VER = 2;
 
   const STORE_DEFS = [
     { name: 'classes', key: 'id' },
     { name: 'students', key: 'id', indexes: ['classId'] },
     { name: 'schedules', key: 'id', indexes: ['classId'] },
     { name: 'homeworks', key: 'id', indexes: ['classId', 'studentId', 'date'] },
+    { name: 'hwMarks', key: 'id', indexes: ['classId', 'studentId'] },
     { name: 'attendances', key: 'id', indexes: ['classId', 'studentId', 'date'] },
     { name: 'disciplines', key: 'id', indexes: ['classId', 'studentId', 'date'] },
     { name: 'plans', key: 'id', indexes: ['classId'] },

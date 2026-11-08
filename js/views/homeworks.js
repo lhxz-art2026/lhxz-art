@@ -52,6 +52,7 @@
         '<span class="muted">至</span>' +
         '<input type="date" id="selTo" value="' + to + '" title="结束日期">' +
         '<button class="btn" id="btnReset">重置筛选</button>' +
+        '<button class="btn" id="btnMissing">👀 未交名单</button>' +
         '<button class="btn" id="btnPrint">🖨️ 打印评分表</button>' +
         '<button class="btn" id="btnCsv">📥 导出CSV</button>' +
         '</div>' +
@@ -98,6 +99,8 @@
         V.homeworks._t2 = '';
         App.refresh();
       });
+      U.$('#btnMissing', el).addEventListener('click', () =>
+        location.hash = '#/missing?c=' + selId);
       U.$('#btnPrint', el).addEventListener('click', () =>
         location.hash = '#/reports/grades?c=' + selId);
       U.$('#btnCsv', el).addEventListener('click', () => {

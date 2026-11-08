@@ -216,6 +216,7 @@
         '<div class="roster-head-actions">' +
         '<button class="btn btn-primary" id="btnAddStudent">＋ 添加学生</button>' +
         '<button class="btn" id="btnTodayAtt">✅ 今日点名</button>' +
+        '<button class="btn" id="btnMissing">👀 未交名单</button>' +
         '<button class="btn" id="btnSeats">🪑 座位表</button>' +
         '<button class="btn" id="btnPaste">📋 粘贴导入</button>' +
         '<button class="btn" id="btnCsv">📥 导出CSV</button>' +
@@ -242,6 +243,7 @@
 
       U.$('#btnAddStudent', el).addEventListener('click', () => openStudentModal(cls, null, list));
       U.$('#btnTodayAtt', el).addEventListener('click', () => location.hash = '#/attendance?c=' + cls.id);
+      U.$('#btnMissing', el).addEventListener('click', () => location.hash = '#/missing?c=' + cls.id);
       U.$('#btnSeats', el).addEventListener('click', () => location.hash = '#/seats?c=' + cls.id);
       U.$('#btnPaste', el).addEventListener('click', () => openPasteModal(cls, list));
       U.$('#btnCsv', el).addEventListener('click', () => exportCsv(cls, list));

@@ -35,6 +35,7 @@
 
     const topicInp = document.createElement('input');
     topicInp.placeholder = '课题名称，如：静物素描·苹果';
+    if (o.topic) topicInp.value = o.topic; // 未交名单"补登记"时预填课题，保证名称一致
     const dl = document.createElement('datalist');
     dl.id = 'dl-topics-' + Date.now();
     topics.forEach(t => { const op = document.createElement('option'); op.value = t; dl.appendChild(op); });

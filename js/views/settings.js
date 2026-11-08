@@ -203,7 +203,7 @@
       const c4 = makeCard(el, 'ℹ️ 关于');
       const about = document.createElement('div');
       about.className = 'muted';
-      about.textContent = '刘星灼美术课 · 美术教师本地工作台\n版本 0.5.0（全部功能已上线：教学管理 + 报表打印 + Excel 互通 + 成长档案 + 锁屏 + 备份搬家）\n数据只保存在本设备浏览器中，不上传任何服务器。';
+      about.textContent = '刘星灼美术课 · 美术教师本地工作台\n版本 0.6.0（新增作业未交名单：按课题自动对比谁没交 + 累计次数榜 + 标记已交 + 打印）\n数据只保存在本设备浏览器中，不上传任何服务器。';
       about.style.whiteSpace = 'pre-line';
       c4.fields.append(about);
     }

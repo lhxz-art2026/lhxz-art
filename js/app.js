@@ -24,6 +24,7 @@
     '#/plans': { title: '备课', view: V.plans },
     '#/seats': { title: '座位表', view: V.seats },
     '#/homeworks': { title: '作业', view: V.homeworks },
+    '#/missing': { title: '未交名单', view: V.missing, match: '#/homeworks' },
     '#/attendance': { title: '考勤', view: V.attendance },
     '#/discipline': { title: '纪律', view: V.discipline },
     '#/works': { title: '优秀作业', view: V.works },
@@ -88,7 +89,7 @@
     } else {
       r = ROUTES[path];
       if (!r) { location.hash = '#/dashboard'; return; }
-      match = path;
+      match = r.match || path;
     }
     setActive(match);
     pageTitle.textContent = r.title;

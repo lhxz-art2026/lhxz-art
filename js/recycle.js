@@ -96,6 +96,7 @@
       }
       await delRecords('schedules', b.schedules);
       await delRecords('plans', b.plans);
+      await delRecords('hwMarks', await DB.byIndex('hwMarks', 'classId', cid));
     },
 
     // 删除学生：学生 + 其全部记录打包进回收站
@@ -113,6 +114,7 @@
       await delRecords('attendances', b.attendances);
       await delRecords('disciplines', b.disciplines);
       await delRecords('works', b.works);
+      await delRecords('hwMarks', await DB.byIndex('hwMarks', 'studentId', sid));
     },
 
     // 删除单条记录（作业/考勤/纪律/备课/优秀作业），M2 起使用

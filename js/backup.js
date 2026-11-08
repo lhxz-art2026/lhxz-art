@@ -4,8 +4,8 @@
 (function () {
   const APP_TAG = 'liuxingzhuo-art';
   const FORMAT = 'lxz-backup';
-  const DATA_VERSION = 1;
-  const STORE_LIST = ['classes', 'students', 'schedules', 'homeworks',
+  const DATA_VERSION = 2;
+  const STORE_LIST = ['classes', 'students', 'schedules', 'homeworks', 'hwMarks',
     'attendances', 'disciplines', 'plans', 'works', 'trash'];
 
   async function exportBackup() {
