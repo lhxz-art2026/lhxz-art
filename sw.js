@@ -1,7 +1,7 @@
 /* 刘星灼美术课 - 离线缓存服务（PWA）
  * 作用：第一次打开后把"软件壳"存进设备，之后断网也能打开软件。
  * 注意：只缓存软件外壳（页面/样式/脚本），不缓存您的数据——数据在浏览器内置数据库里。 */
-const CACHE = 'lxz-art-v5';
+const CACHE = 'lxz-art-v6';
 const SHELL = [
   './', 'index.html', 'css/style.css', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png',
@@ -9,7 +9,7 @@ const SHELL = [
   'js/vendor/echarts.min.js',
   'js/views/dashboard.js', 'js/views/classes.js', 'js/views/roster.js',
   'js/views/panel.js', 'js/views/attendance.js', 'js/views/discipline.js',
-  'js/views/homeworks.js', 'js/views/works.js',
+  'js/views/homeworks.js', 'js/views/missing.js', 'js/views/works.js',
   'js/views/schedule.js', 'js/views/plans.js', 'js/views/seats.js',
   'js/views/reports.js', 'js/views/portfolio.js',
   'js/views/backupView.js', 'js/views/trash.js', 'js/views/settings.js',
